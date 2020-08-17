@@ -1,14 +1,14 @@
 """
-Program: generator.py
+Name      :Nahia Akter
+Student#  : 301106956
+Program   : generator.py
+
 Generates and displays sentences using simple grammar
 and vocabulary. Words are chosen at random.
 """
 
 import random
-articles = ("A", "THE")
-nouns = ("BOY", "GIRL", "BAT", "BALL",)
-verbs = ("HIT", "SAW", "LIKED")
-prepositions = ("WITH", "BY")
+
 
 def sentence():
     """Builds and returns a sentence."""
