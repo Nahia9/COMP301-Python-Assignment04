@@ -1,4 +1,5 @@
-FOR
-AND
-NOR
 BUT
+FOR
+SO
+AND
+OR
