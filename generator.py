@@ -1,10 +1,9 @@
 """
+File Name: generator.py
 Name:Nahia Akter
 Student#: 301106956
-Program: generator.py
-
-Generates and displays sentences using simple grammar
-and vocabulary. Words are chosen at random.
+Date: 23/08/2020
+File description: Generates and displays sentences chooding random words from files
 """
 
 import random
@@ -15,13 +14,13 @@ def getWords(filename):
     for each_line in files:
         each_line = each_line.strip()
         temp_list.append(each_line)
-
+    # list will converted to tuple
     words = tuple(temp_list)
     files.close()
-
+    # returning the tuple
     return words
 
-"""Getting words from the text files."""
+"""Getting words from the text files using getWords function"""
 
 articles = getWords('articles.txt')
 nouns = getWords('nouns.txt')
@@ -37,7 +36,6 @@ def sentence():
         return nounPhrase() + " " + verbPhrase()
     else:
         return nounPhrase() + " " + verbPhrase() + " " +  conjunctionPhrase() + " " + nounPhrase() + " " + verbPhrase() 
-
 
 def nounPhrase():
     """Builds and returns a noun phrase."""
